@@ -1,0 +1,167 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Center container */
+div[align="center"] {
+    margin-top: 60px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+/* Form Styling */
+s\\:form, form {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: inline-block;
+    min-width: 320px;
+}
+
+/* Text fields */
+.formTextField {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.formTextField:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit Button */
+.actionBTn2 {
+    width: 30%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.actionBTn {
+    width: 50%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 12px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.actionBTn:hover {
+    background: #2980b9;
+}
+
+/* Product Table */
+.studentTable {
+    margin: auto;
+    margin-top: 40px;
+    border-collapse: collapse;
+    width: 80%;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.studentTable th, .studentTable td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.studentTable th {
+    background: #3498db;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.studentTable tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.studentTable tr:hover {
+    background: #f1faff;
+}
+
+/* Action Links */
+.studentTable td a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.studentTable td a:hover {
+    color: #e74c3c;
+}
+
+
+/* ================================
+   Register / Student Forms
+   ================================ */
+.form-container {
+    background: #ffffff;
+    padding: 25px 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 450px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Struts2 form labels */
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #444;
+}
+
+/* Radio group styling */
+.radio-group {
+    margin: 15px 0;
+}
+.radio-group label {
+    margin-right: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="grading-system" extends="struts-default">
+        <action name="loginAction" class="action.LoginAction">
+            <result name="success" type="redirect">dashboardAction</result>
+            <result name="input">/login.jsp</result>
+        </action>
+
+        <action name="dashboardAction" class="action.DashboardAction">
+            <result name="success">/dashboard.jsp</result>
+        </action>
+
+        <action name="registerAction">
+            <result name="success">/register.jsp</result>
+        </action>
+
+        <action name="addStudent" class="action.AddStudent">
+            <result name="success" type="redirect">dashboardAction</result>
+            <result name="error">/error.jsp</result>
+            <result name="input">/register.jsp</result>
+        </action>
+
+        <action name="updateStudentData" class="action.UpdateStudentData">
+            <result name="success">/updateStudent.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="updateStudentAction" class="action.UpdateStudentAction">
+            <result name="success" type="redirect">dashboardAction</result>
+            <result name="error">/error.jsp</result>
+            <result name="input">/updateStudent.jsp</result>
+        </action>
+
+        <action name="updateScoreData" class="action.UpdateScoreData">
+            <result name="success">/inputScore.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <action name="updateScoreAction" class="action.UpdateScoreAction">
+            <result name="success" type="redirect">dashboardAction</result>
+            <result name="error">/error.jsp</result>
+            <result name="input">/inputScore.jsp</result>
+        </action>
+
+        <action name="deleteStudentAction" class="action.DeleteStudentAction">
+            <result name="success" type="redirect">dashboardAction</result>
+            <result name="error">/error.jsp</result>
+        </action>
+    </package>
+</struts>
