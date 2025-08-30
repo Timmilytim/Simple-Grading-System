@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>WELCOME TO TIM SCHOOLS</h1>
     <div align="center">
-        <h1>Welcome to the Dashboard</h1>
         <a href="register.jsp">
             <button class="actionBTn2">Register Student</button>
         </a>
@@ -45,12 +45,12 @@
                 </td>
                 <td>
                     <a href="updateScoreData?id=<s:property value="#student.id"/>">
-                         <button class="actionBTN">Record Score</button>
+                         <button class="actionBTN">Score</button>
                     </a>
                 </td>
                 <td>
-                    <a href="reportAction?id=<s:property value="#student.id"/>">
-                        <button class="actionBTN">Check Report</button>
+                    <a href="reportDataAction?id=<s:property value="#student.id"/>">
+                        <button class="actionBTN">Report</button>
                     </a>
                 </td>
                 <td>

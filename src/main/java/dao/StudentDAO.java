@@ -136,6 +136,34 @@ public class StudentDAO {
         return status;
     }
 
+    public static Student getAllRecordsById(int id){
+        Student student = null;
+        try{
+            Connection conn = database.DBUtil.getConnection();
+            PreparedStatement ps = conn.prepareStatement("SELECT * FROM students WHERE id = ?");
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            if(rs.next()) {
+                student = new Student(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("level"),
+                        rs.getInt("age"),
+                        rs.getString("gender"),
+                        rs.getInt("java"),
+                        rs.getInt("python"),
+                        rs.getInt("php"),
+                        rs.getInt("javascript"),
+                        rs.getInt("html"));
+            }
+            database.DBUtil.closeConnection(conn);
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        return  student;
+    }
+
+
 
     public static int deleteStudent(int id) {
         int status = 0;

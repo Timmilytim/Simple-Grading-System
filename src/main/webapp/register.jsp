@@ -19,5 +19,8 @@
                 <s:submit value="Save Student" cssClass="actionBTn"/>
             </s:form>
         </div>
+        <div align="center">
+            <button onclick="history.back()" style="width: 10%" class="actionBTn">Go back</button>
+        </div>
     </body>
 </html>

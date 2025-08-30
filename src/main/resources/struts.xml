@@ -45,6 +45,11 @@
             <result name="input">/inputScore.jsp</result>
         </action>
 
+        <action name="reportDataAction" class="action.ReportDataAction">
+            <result name="success">/report.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
         <action name="deleteStudentAction" class="action.DeleteStudentAction">
             <result name="success" type="redirect">dashboardAction</result>
             <result name="error">/error.jsp</result>

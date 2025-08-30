@@ -15,7 +15,14 @@ body {
 
 /* Center container */
 div[align="center"] {
-    margin-top: 60px;
+    margin-top: 40px;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2c3e50;
 }
 
 /* Headings */
@@ -48,17 +55,16 @@ s\\:form, form {
 }
 
 .formTextField:focus {
-    border-color: #3498db;
+    border-color: #2c3e50;
     outline: none;
 }
 
 /* Submit Button */
 .actionBTn2 {
-    width: 30%;
+    width: 20%;
     padding: 12px;
-    margin-top: 10px;
     font-size: 16px;
-    background: #3498db;
+    background: #2c3e50;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -69,9 +75,9 @@ s\\:form, form {
 .actionBTn {
     width: 50%;
     padding: 12px;
-    margin-top: 10px;
+    margin: 5px auto;
     font-size: 12px;
-    background: #3498db;
+    background:#2c3e50;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -80,7 +86,7 @@ s\\:form, form {
 }
 
 .actionBTn:hover {
-    background: #2980b9;
+    background: #2c3e50;
 }
 
 /* Product Table */
@@ -102,7 +108,7 @@ s\\:form, form {
 }
 
 .studentTable th {
-    background: #3498db;
+    background: #2c3e50;
     color: white;
     font-size: 16px;
     text-transform: uppercase;
@@ -120,7 +126,7 @@ s\\:form, form {
 /* Action Links */
 .studentTable td a {
     text-decoration: none;
-    color: #3498db;
+    color: #2c3e50;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -165,3 +171,75 @@ label {
     font-weight: normal;
     cursor: pointer;
 }
+
+/* ================================
+   Report Page
+   ================================ */
+.report-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.report-header h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.report-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Report Table */
+.reportTable {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.reportTable th,
+.reportTable td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.reportTable th {
+    background: #2c3e50;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.reportTable tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.reportTable tr:hover {
+    background: #f1faff;
+}
+
+/* CGPA and Remark */
+.report-summary {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.report-summary h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
