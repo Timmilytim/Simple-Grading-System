@@ -70,11 +70,12 @@ public class ReportDataAction extends ActionSupport {
             }
         }
 
-        public double getCgpa(int java, int python, int php, int javascript, int html) {
-            double total = java + python + php + javascript + html;
-            double average = total / 5.0;
-            return (average / 100) * 5.0;
-        }
+    public double getCgpa(int java, int python, int php, int javascript, int html) {
+        double total = java + python + php + javascript + html;
+        double average = total / 5.0;
+        double cgpa = (average / 100.0) * 5.0;
+        return Math.round(cgpa * 100.0) / 100.0; // keeps 2 decimal places
+    }
 
     private String cgpaRemark(double cgpa) {
             if (cgpa >= 4.5) return "Excellent";

@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div align="center">
-        <h2>TIM SCHOOLS PORTAL</h2>
-        <s:form action="loginAction">
-            <s:textfield name="userName" label="Username" class="formTextField" />
-            <s:password name="password" label="Password" class="formTextField" />
-            <s:submit value="Login" class="actionBTn"/>
-        </s:form>
+    <div class="formPage">
+        <div class="form-container">
+            <h2>TIM SCHOOLS PORTAL</h2>
+            <s:form action="loginAction">
+                <s:textfield name="userName" label="Username" class="formTextField" />
+                <s:password name="password" label="Password" class="formTextField" />
+                <s:submit value="Login" class="actionBTn"/>
+            </s:form>
+        </div>
     </div>
 </body>
 </html>

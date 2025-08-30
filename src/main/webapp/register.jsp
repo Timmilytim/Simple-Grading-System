@@ -6,7 +6,8 @@
     <title>Register Student</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
+<body>
+    <div class="formPage">
         <div class="form-container">
             <h2>Register Student</h2>
             <s:form action="addStudent">
@@ -19,8 +20,10 @@
                 <s:submit value="Save Student" cssClass="actionBTn"/>
             </s:form>
         </div>
-        <div align="center">
-            <button onclick="history.back()" style="width: 10%" class="actionBTn">Go back</button>
+        <div align="center" >
+            <button onclick="history.back()" class="actionBTn">Go back</button>
         </div>
-    </body>
+    </div>
+
+</body>
 </html>
